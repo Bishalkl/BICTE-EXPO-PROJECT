@@ -1,0 +1,85 @@
+@use '../util/' as u;
+
+// Section detail style
+
+.main-panel{
+    overflow: hidden;
+    // built in utility
+    @mixin size_property($value1, $value2){
+        width: $value1;
+        height: $value2;
+    }
+
+
+    // section one style 
+    &__section1{
+        @include size_property(100%, 100%);
+        padding: u.rem(40);
+
+        // style for section one h1
+        h1{
+            color: var(--clr-gray);
+            font-size: var(--fs-100);
+            font-weight: var(--fw-900);
+            line-height: 1;
+
+            .span_word{
+                color: var(--clr-white);
+            }
+        }
+
+      
+        .email_h4{
+
+
+            background-color: var(--clr-gray);
+            color: var(--clr-white);
+            display: inline-block;
+            padding: u.rem(20) u.rem(40);
+            font-style: italic;
+            margin-block-start: u.rem(70);
+            border: none;
+            box-shadow: u.rem(10) u.rem(10);
+            transition: 0.5s ease-in;
+
+
+            &:hover{
+                color: var(--clr-gray);
+                background-color: var(--clr-white);
+                cursor: pointer;
+            }
+        }
+
+
+    }
+
+
+    // section two style
+    &__section2{
+        @include size_property(100%, 100%);
+        background-color: var(--clr-gray);
+        padding: u.rem(20);
+        color: var(--clr-dark-blue);
+
+
+        .dashboard_section{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .timer{
+                background-color: var(--clr-white);
+                display: inline-block;
+                padding: u.rem(20);
+                border: none;
+            }
+
+            .btn{
+                background-color: var(--clr-white);
+                padding: u.rem(20);
+            }
+
+        }
+
+
+    }
+}

@@ -1,0 +1,28 @@
+@use '../util/' as u;
+
+:root{
+
+    // use garna color haru
+    --clr-yellow: hsl(46, 98%, 62%);
+    --clr-blue: hsl(201, 57%, 78%);
+    --clr-black: hsl(0, 0%, 0%);
+    --clr-white: hsl(0, 0%, 94%);
+    --clr-dark-blue: hsl(199, 16%, 20%);
+    --clr-gray: hsl(202, 21%, 25%);
+
+    // use fs haru
+    --fs-16: #{u.rem(16)};
+    --fs-24: #{u.rem(24)};
+    --fs-48: #{u.rem(48)};
+    --fs-100: #{u.rem(100)};
+
+    // use fw haru
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+    --fw-900: 900;
+
+} 
+
+
